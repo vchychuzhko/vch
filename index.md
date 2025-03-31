@@ -3,27 +3,27 @@
 layout: home
 
 hero:
-  name: VCH Blog
-  tagline: Vladyslav Chychuzhko Personal Blog
+  name: Vladyslav Chychuzhko
+  tagline: Personal Website & Portfolio
   actions:
     - theme: brand
       text: Get Started
-      link: /introduction
+      link: /blog/introduction
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vchychuzhko/vch-blog
+      link: https://github.com/vchychuzhko/vch
 
 features:
   - title: Property document.forms
     details: Collection of all forms on the page
-    link: /post/forms
+    link: /blog/web/forms
     linkText: Read more
   - title: Attribute novalidate
     details: Attribute that disables form validation
-    link: /post/web/novalidate
+    link: /blog/web/novalidate
     linkText: Read more
   - title: Nginx + Apache
     details: Guide to set up Nginx and Apache to run simultaneously
-    link: /post/linux/nginx-apache
+    link: /blog/linux/nginx-apache
     linkText: Read more
 ---

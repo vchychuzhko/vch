@@ -1,7 +1,8 @@
 ---
 title: Introduction
-description: Short introduction to my Blog
-outline: false
+description: Introduction to Personal Blog
+
+aside: false
 editLink: false
 lastUpdated: false
 ---
