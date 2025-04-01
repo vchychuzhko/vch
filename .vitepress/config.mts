@@ -39,7 +39,10 @@ export default defineConfig({
     },
 
     nav: [
+      { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/introduction' },
+      { text: 'Portfolio', link: '/portfolio' },
+      { text: 'Certifications', link: '/certifications' },
     ],
 
     socialLinks: [

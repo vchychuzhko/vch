@@ -7,9 +7,9 @@ editLink: false
 lastUpdated: false
 ---
 
-# Introduction
+# Welcome!
 
-Welcome! My name is Vladyslav and this blog is where I share insights, tutorials, and personal experiences from my journey in web development.
+My name is Vladyslav and this blog is where I share thoughts, tutorials, and personal experience from my journey in web development.
 
 Whether you're a fellow coder, a beginner, or just curious person, hope you'll find something valuable here.
 

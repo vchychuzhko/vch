@@ -1,6 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+pageClass: home-page
 
 hero:
   name: Vladyslav Chychuzhko
@@ -10,20 +11,14 @@ hero:
       text: Get Started
       link: /blog/introduction
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/vchychuzhko/vch
+      text: Resume
+      link: https://vchychuzhko.com/cv.pdf
 
 features:
-  - title: Property document.forms
-    details: Collection of all forms on the page
-    link: /blog/web/forms
-    linkText: Read more
-  - title: Attribute novalidate
-    details: Attribute that disables form validation
-    link: /blog/web/novalidate
-    linkText: Read more
-  - title: Nginx + Apache
-    details: Guide to set up Nginx and Apache to run simultaneously
-    link: /blog/linux/nginx-apache
-    linkText: Read more
+  - title: Full Stack Development
+    details: Magento 2, Symfony, VueJS
+  - title: Music
+    details: Guitar, Piano, Vocals
+  - title: Sport
+    details: Volleyball, Football, Snowboarding
 ---
