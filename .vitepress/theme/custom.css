@@ -1,0 +1,17 @@
+.home-page h1 .name {
+  max-width: initial;
+}
+
+.portfolio-page h1 {
+  text-align: center;
+}
+.portfolio-page .VPSocialLinks {
+  gap: 1rem;
+}
+.portfolio-page .VPSocialLinks a {
+  width: initial;
+}
+
+.certifications-page h1 {
+  text-align: center;
+}

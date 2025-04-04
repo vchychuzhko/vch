@@ -3,13 +3,13 @@ import 'dotenv/config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'VCH Blog',
-  description: 'Vladyslav Chychuzhko Personal Blog',
+  title: 'Vladyslav Chychuzhko',
+  description: 'Personal Website & Portfolio',
   head: [
-    ['meta', { property: 'og:title', content: 'VCH Blog' }],
+    ['meta', { property: 'og:title', content: 'Vladyslav Chychuzhko' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'VCH Blog' }],
-    ['meta', { property: 'og:description', content: 'Vladyslav Chychuzhko Personal Blog' }],
+    ['meta', { property: 'og:site_name', content: 'Vladyslav Chychuzhko' }],
+    ['meta', { property: 'og:description', content: 'Personal Website & Portfolio' }],
     ['meta', { property: 'og:url', content: process.env.BASE_URL + '/' }],
     ['meta', { property: 'og:image', content: process.env.BASE_URL + '/og.jpg' }],
     ['meta', { property: 'og:image:type', content: 'image/jpeg' }],
@@ -19,26 +19,31 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico', sizes: 'any' }],
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png', sizes: '180x180' }],
-    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
   ],
   transformPageData({ title, description, frontmatter }) {
     if (!title || !description) return
 
     frontmatter.head ??= []
     frontmatter.head.push(
-      ['meta', { property: 'og:title', content: title + ' | VCH Blog' }],
+      ['meta', { property: 'og:title', content: title + ' | VCH' }],
       ['meta', { property: 'og:description', content: description }],
     )
   },
   srcExclude: ['**/README.md', '**/LICENSE.md'],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    siteTitle: 'VCH',
+
     search: {
       provider: 'local',
     },
 
     nav: [
-      // { text: 'Home', link: '/' },
+      { text: 'Home', link: '/' },
+      { text: 'Blog', link: '/blog/introduction' },
+      { text: 'About', link: '/about' },
+      { text: 'Portfolio', link: '/portfolio' },
+      { text: 'Certifications', link: '/certifications' },
     ],
 
     socialLinks: [
@@ -47,10 +52,10 @@ export default defineConfig({
     ],
 
     sidebar: [
-      { text: 'Introduction', link: '/introduction' },
+      { text: 'Introduction', link: '/blog/introduction' },
       {
         text: 'Web',
-        base: '/post/web',
+        base: '/blog/web',
         items: [
           { text: 'Property document.forms', link: '/forms' },
           { text: 'Attribute novalidate', link: '/novalidate' },
@@ -58,7 +63,7 @@ export default defineConfig({
       },
       {
         text: 'Linux',
-        base: '/post/linux',
+        base: '/blog/linux',
         items: [
           { text: 'Nginx + Apache', link: '/nginx-apache' },
         ],
@@ -68,7 +73,7 @@ export default defineConfig({
     outline: 'deep',
 
     editLink: {
-      pattern: 'https://github.com/vchychuzhko/vch-blog/blob/master/:path',
+      pattern: 'https://github.com/vchychuzhko/vch/blob/master/:path',
       text: 'View this page on GitHub',
     },
 

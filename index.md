@@ -1,29 +1,24 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+pageClass: home-page
 
 hero:
-  name: VCH Blog
-  tagline: Vladyslav Chychuzhko Personal Blog
+  name: Vladyslav Chychuzhko
+  tagline: Personal Website & Portfolio
   actions:
     - theme: brand
-      text: Get Started
-      link: /introduction
+      text: About Me
+      link: /about
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/vchychuzhko/vch-blog
+      text: Resume
+      link: https://vchychuzhko.com/cv.pdf
 
 features:
-  - title: Property document.forms
-    details: Collection of all forms on the page
-    link: /post/forms
-    linkText: Read more
-  - title: Attribute novalidate
-    details: Attribute that disables form validation
-    link: /post/web/novalidate
-    linkText: Read more
-  - title: Nginx + Apache
-    details: Guide to set up Nginx and Apache to run simultaneously
-    link: /post/linux/nginx-apache
-    linkText: Read more
+  - title: Full Stack Development
+    details: Magento 2, Symfony, Vue.js
+  - title: Music
+    details: Guitar, Vocals, Piano
+  - title: Sport
+    details: Volleyball, Football, Snowboarding
 ---

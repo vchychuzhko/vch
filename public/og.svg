@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+  <rect x="0" y="0" width="200" height="200" fill="#3451b2"/>
+  <rect x="69" y="82" width="62" height="36" rx="4" ry="4" fill="#222222"/>
+  <text x="72" y="114" font-family="sans" font-size="36" fill="#ffffff">vch</text>
+</svg>

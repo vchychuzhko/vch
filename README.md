@@ -1,6 +1,6 @@
-# VCH Blog
+# Vladyslav Chychuzhko
 
-Vladyslav Chychuzhko Personal Blog.
+Personal Website & Portfolio.
 
 ## Deployment
 
