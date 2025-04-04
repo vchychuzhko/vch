@@ -4,6 +4,9 @@ pageClass: portfolio-page
 
 sidebar: false
 aside: false
+prev:
+  text: About Me
+  link: /about
 next:
   text: Certifications
   link: /certifications
