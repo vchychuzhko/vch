@@ -4,7 +4,7 @@ Personal Website & Portfolio.
 
 ## Deployment
 
-Before deploying set **BASE_URL** variable in `.env` file or pass it during build:
+Set **BASE_URL** variable in `.env` file or pass it during build:
 
 ```sh
 BASE_URL=http://localhost:5173 npm run docs:build

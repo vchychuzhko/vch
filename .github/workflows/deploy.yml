@@ -1,40 +1,35 @@
-name: Build
+name: Deploy
 
-# Trigger the workflow manually
 on:
-  workflow_dispatch:
-
-# Grant write permission to the workflow
-permissions:
-  contents: write
+  [workflow_dispatch]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Setup Key
+        run: |
+          set -eu
+          mkdir "$HOME/.ssh"
+          echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+          chmod 600 "$HOME/.ssh/key"
+
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: master
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+      - name: Upload
+        run: |
+          rsync -e "ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . ${{ secrets.user }}@${{ secrets.host }}:${{ secrets.path }}/web
 
-      - name: Install dependencies
-        run: npm install
+      - name: Node
+        run: |
+          ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no ${{ secrets.user }}@${{ secrets.host }} '${{ secrets.path }}/.deploy/node.sh'
 
-      - name: Write .env file
-        run: echo "${{ vars.ENV_CONTENT }}" > .env
+      - name: Build
+        run: |
+          ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no ${{ secrets.user }}@${{ secrets.host }} '${{ secrets.path }}/.deploy/build.sh'
 
-      - name: Build project
-        run: npm run docs:build
-
-      - name: Deploy to branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: build # Branch where `dist` will be saved
-          publish_dir: ./.vitepress/dist # Path to the build output folder
+      - name: Scripts
+        run: |
+          ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no ${{ secrets.user }}@${{ secrets.host }} '${{ secrets.path }}/.deploy/scripts.sh'
