@@ -18,17 +18,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload
-        run: |
-          rsync -e "ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . ${{ secrets.user }}@${{ secrets.host }}:${{ secrets.path }}/web
+      - name: Node Setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
-      - name: Node
-        run: |
-          ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no ${{ secrets.user }}@${{ secrets.host }} '${{ secrets.path }}/.deploy/node.sh'
+      - name: Node Install
+        run: npm ci
 
       - name: Build
+        run: npm run docs:build
+
+      - name: Upload
         run: |
-          ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no ${{ secrets.user }}@${{ secrets.host }} '${{ secrets.path }}/.deploy/build.sh'
+          rsync -e "ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete ./.vitepress/dist ${{ secrets.user }}@${{ secrets.host }}:${{ secrets.path }}/web
 
       - name: Scripts
         run: |
