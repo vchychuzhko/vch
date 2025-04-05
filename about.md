@@ -2,7 +2,6 @@
 title: About Me
 
 sidebar: false
-#aside: false
 prev: false
 next:
   text: Portfolio

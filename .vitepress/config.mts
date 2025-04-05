@@ -40,7 +40,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Blog', link: '/blog/introduction' },
+      { text: 'Blog', link: '/blog/' },
       { text: 'About', link: '/about' },
       { text: 'Portfolio', link: '/portfolio' },
       { text: 'Certifications', link: '/certifications' },
@@ -52,7 +52,7 @@ export default defineConfig({
     ],
 
     sidebar: [
-      { text: 'Introduction', link: '/blog/introduction' },
+      { text: 'Introduction', link: '/blog/' },
       {
         text: 'Web',
         base: '/blog/web',
