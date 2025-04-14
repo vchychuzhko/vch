@@ -64,16 +64,39 @@ Through my career I worked with many e-commerce projects around the world, solvi
 
 I've attended many conferences and meetups, and even participated in some of them as a speaker:
 
-### Magento Association Connect 2021
+### Magento Association Connect (2021)
 
-Theme - **How to Develop Handy Magento 2 Instance Builder**
+> How to Develop Handy Magento 2 Instance Builder
 
-<iframe src="https://www.youtube.com/embed/ZEMVKcPH57A?si=tNn3asOv1Kq8iEI2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<script setup>
+import { VPSponsors } from 'vitepress/theme'
 
-### WarsawJS 2024
+const linksMA = [
+  {
+    name: 'YouTube',
+    img: 'https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg',
+    url: 'https://youtube.com/watch?v=ZEMVKcPH57A'
+  },
+]
 
-Theme - **Form is Your Friend**
+const linksWJS = [
+  {
+    name: 'YouTube',
+    img: 'https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg',
+    url: 'https://youtube.com/watch?v=7Kfp16wxhK0'
+  },
+  {
+    name: 'Slides',
+    img: 'https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png',
+    url: 'https://github.com/vchychuzhko/p-form'
+  },
+]
+</script>
 
-Link - https://warsawjs.com/meetups/121
+<VPSponsors mode="aside" :data="linksMA" />
 
-Slides - https://github.com/vchychuzhko/p-form
+### WarsawJS #121 (2024)
+
+>Form is Your Friend
+
+<VPSponsors mode="aside" :data="linksWJS" />
