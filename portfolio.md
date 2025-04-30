@@ -29,7 +29,7 @@ const portfolio = [
     ]
   },
   {
-    avatar: 'https://pa-demo.vchychuzhko.com/og.jpg',
+    avatar: 'https://pa-demo.vchychuzhko.com/og.svg',
     name: 'Personal Accountant',
     title: 'App to keep all balances and transactions organized',
     desc: 'Symfony, EasyAdmin, Chart.js',
@@ -44,3 +44,7 @@ const portfolio = [
 <h1>Portfolio</h1>
 
 <VPTeamMembers :members="portfolio" />
+
+<div class="tip custom-block" style="padding-top: 8px">
+  And more unpublished projects on <a href="https://github.com/vchychuzhko?tab=repositories" target="_blank">GitHub</a>
+</div>

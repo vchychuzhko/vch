@@ -12,53 +12,73 @@ lastUpdated: false
 
 # About Me
 
-Hi! I'm resourceful and competent full-stack developer with 6 years of experience in implementing and maintaining websites. Have worked with Magento, Symfony and VueStorefront platforms with various clients around the globe.
+## Hello!
 
-I have good understanding of user experience and web accessibility - convenience should always be above features. Have strong faith in PWA and open source.
+I'm a resourceful and competent full-stack developer with 6 years of experience in implementing and maintaining websites. Have worked with Magento, Symfony and VueStorefront platforms with various clients around the globe.
 
-I'm constantly seeking for new technologies and approaches - do self-education in form of pet projects with new platforms and preparation to gain new certifications.
+I have a good understanding of user experience and web accessibility - convenience should always be above features. Have strong faith in PWA and open source.
+
+I'm constantly seeking for new technologies and solutions - do self-education in the form of pet projects with new platforms and preparation to gain new certifications.
 
 ## Technologies
 
+- JavaScript, TypeScript
+- Vue.js
 - PHP
-- JavaScript
 - HTML, CSS
+- Node.js
 - MySQL
 
 ### Platforms
 
 - Magento 2
 - Symfony
+- Vue.js, Nuxt
 - VueStorefront
-- Vue.js (Vite, Nuxt)
 
 ### Tools
 
 - Git
+- Linux CLI, BASH
+- CI/CD, Docker
+- Elasticsearch, Redis
+- Apache / Nginx
+- XML / XSD, SVG
+
+### Extensions
+
 - Vuex, Pinia, PrimeVue, Vuetify, Vuelidate
 - EasyAdmin, Chart.js
 - Eslint, Prettier
-- Apache / Nginx
-- XML / XSD, SVG
-- Linux CLI, BASH
-- Docker
-- Elasticsearch, Redis
 
 ## Responsibilities
 
-Through my career I worked with many e-commerce projects around the world, solving various tasks:
+### Magento
 
-- Creating projects from scratch and maintaining already existing ones
-- Developing, installing, updating and customizing extensions and themes
-- Adding third-party integrations (GTM, Storyblok, Bazaarvoice, etc.)
-- Migrations and minor or major version upgrades
-- Implementing mobile-first and SEO-friendly layouts
-- Designs and features estimation
-- Reviewing and refactoring code
-- Performing SEO profiling and implementing accessibility improvements
-- Building and customizing REST API clients and servers
-- Configuring hosting and production environment
+- Developing, installing and updating modules and themes
+- Working with Catalog, Account and Checkout pages
+- Adding third-party integrations (GTM, Review.io, Bazaarvoice, etc.)
+- Migration from M1 to M2, to VueStorefront and minor version upgrades
+- Implementing new endpoints with REST API and GraphQL
+- Performing SEO profiling and applying accessibility improvements
 - Deploying projects with GitHub Actions and Bitbucket Pipelines
+
+### Symfony
+
+- Building and customizing REST API clients and endpoints
+- Developing admin panels using EasyAdmin
+- Creating dashboard pages with Chart.js
+- Integrating Vue.js as a frontend
+- Migration minor and major versions
+- Writing CLI commands and queued tasks
+
+### Vue.js
+
+- Implementing mobile-first and SEO-friendly layouts
+- Utilizing Vuex or Pinia state managers
+- Adding and customizing PrimeVue and Vuetify components
+- Integrating Storyblok pages and components
+- Configuring PWA and setting up OpenGraph requests
 
 ## Speaker
 
@@ -93,10 +113,10 @@ const linksWJS = [
 ]
 </script>
 
-<VPSponsors mode="aside" :data="linksMA" />
+<VPSponsors :data="linksMA" />
 
 ### WarsawJS #121 (2024)
 
->Form is Your Friend
+> Form is Your Friend
 
-<VPSponsors mode="aside" :data="linksWJS" />
+<VPSponsors :data="linksWJS" />
