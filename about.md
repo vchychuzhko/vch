@@ -14,7 +14,7 @@ lastUpdated: false
 
 ## Hello!
 
-I'm a resourceful and competent full-stack developer with 6 years of experience in implementing and maintaining websites. Have worked with Magento, Symfony and VueStorefront platforms with various clients around the globe.
+I'm a resourceful and competent full-stack developer with 7 years of experience in implementing and maintaining websites. Have worked with Magento, Symfony and VueStorefront platforms with various clients around the globe.
 
 I have a good understanding of user experience and web accessibility - convenience should always be above features. Have strong faith in PWA and open source.
 
@@ -27,13 +27,17 @@ I'm constantly seeking for new technologies and solutions - do self-education in
 - PHP
 - HTML, CSS
 - Node.js
+
+### Databases
+
 - MySQL
+- Supabase
 
 ### Platforms
 
 - Magento 2
-- Symfony
 - Vue.js, Nuxt
+- Symfony
 - VueStorefront
 
 ### Tools

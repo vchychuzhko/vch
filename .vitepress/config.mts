@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import 'dotenv/config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,10 +7,9 @@ export default defineConfig({
   head: [
     ['meta', { property: 'og:title', content: 'Vladyslav Chychuzhko' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'Vladyslav Chychuzhko' }],
     ['meta', { property: 'og:description', content: 'Personal Website & Portfolio' }],
-    ['meta', { property: 'og:url', content: process.env.BASE_URL + '/' }],
-    ['meta', { property: 'og:image', content: process.env.BASE_URL + '/og.jpg' }],
+    ['meta', { property: 'og:url', content: 'https://vchychuzhko.com/' }],
+    ['meta', { property: 'og:image', content: 'https://vchychuzhko.com/og.jpg' }],
     ['meta', { property: 'og:image:type', content: 'image/jpeg' }],
     ['meta', { property: 'og:image:height', content: '200' }],
     ['meta', { property: 'og:image:width', content: '200' }],

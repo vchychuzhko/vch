@@ -19,9 +19,9 @@ import { VPTeamMembers } from 'vitepress/theme'
 
 const portfolio = [
   {
-    avatar: 'https://playsome.fun/images/og.jpg',
+    avatar: 'https://playsome.fun/images/og.svg',
     name: 'PlaySome',
-    title: 'Web application to visualize music in real time',
+    title: 'Visualize music in real time',
     desc: 'Symfony, JavaScript',
     links: [
       { icon: { svg: 'Live' }, link: 'https://playsome.fun' },
@@ -31,11 +31,21 @@ const portfolio = [
   {
     avatar: 'https://pa-demo.vchychuzhko.com/og.svg',
     name: 'Personal Accountant',
-    title: 'App to keep all balances and transactions organized',
+    title: 'Keep all balances and transactions organized',
     desc: 'Symfony, EasyAdmin, Chart.js',
     links: [
       { icon: { svg: 'Demo' }, link: 'https://pa-demo.vchychuzhko.com' },
       { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/personal-accountant' },
+    ]
+  },
+  {
+    avatar: 'https://alcotimer.com/og.svg',
+    name: 'AlcoTimer',
+    title: 'Add some random into the drinking process',
+    desc: 'Vue.js, PrimeVue, Pinia, PWA',
+    links: [
+      { icon: { svg: 'Live' }, link: 'https://alcotimer.com' },
+      { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/alcotimer' },
     ]
   },
 ]
