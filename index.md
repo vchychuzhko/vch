@@ -16,7 +16,7 @@ hero:
 
 features:
   - title: Full Stack Development
-    details: Magento 2, Symfony, Vue.js
+    details: Magento 2, Vue.js, Symfony
   - title: Music
     details: Guitar, Vocals, Piano
   - title: Sport

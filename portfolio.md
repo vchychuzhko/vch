@@ -21,8 +21,7 @@ const portfolio = [
   {
     avatar: 'https://playsome.fun/images/og.svg',
     name: 'PlaySome',
-    title: 'Visualize music in real time',
-    desc: 'Symfony, JavaScript',
+    desc: 'Symfony, AudioContext API',
     links: [
       { icon: { svg: 'Live' }, link: 'https://playsome.fun' },
       { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/playsome' },
@@ -31,7 +30,6 @@ const portfolio = [
   {
     avatar: 'https://pa-demo.vchychuzhko.com/og.svg',
     name: 'Personal Accountant',
-    title: 'Keep all balances and transactions organized',
     desc: 'Symfony, EasyAdmin, Chart.js',
     links: [
       { icon: { svg: 'Demo' }, link: 'https://pa-demo.vchychuzhko.com' },
@@ -41,11 +39,19 @@ const portfolio = [
   {
     avatar: 'https://alcotimer.com/og.svg',
     name: 'AlcoTimer',
-    title: 'Add some random into the drinking process',
-    desc: 'Vue.js, PrimeVue, Pinia, PWA',
+    desc: 'Vue.js, PrimeVue, Pinia',
     links: [
       { icon: { svg: 'Live' }, link: 'https://alcotimer.com' },
       { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/alcotimer' },
+    ]
+  },
+  {
+    avatar: 'https://vchychuzhko.github.io/todo/og.svg',
+    name: 'ToDo',
+    desc: 'Vue.js, Vuetify, Tailwind',
+    links: [
+      { icon: { svg: 'Live' }, link: 'https://vchychuzhko.github.io/todo' },
+      { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/todo' },
     ]
   },
 ]

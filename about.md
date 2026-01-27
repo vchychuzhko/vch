@@ -14,7 +14,7 @@ lastUpdated: false
 
 ## Hello!
 
-I'm a resourceful and competent full-stack developer with 7 years of experience in implementing and maintaining websites. Have worked with Magento, Symfony and VueStorefront platforms with various clients around the globe.
+I'm a resourceful and competent full-stack developer with 7 years of experience in implementing and maintaining websites. Have worked with Magento, Vue.js and Symfony platforms with various clients around the globe.
 
 I have a good understanding of user experience and web accessibility - convenience should always be above features. Have strong faith in PWA and open source.
 
@@ -26,7 +26,6 @@ I'm constantly seeking for new technologies and solutions - do self-education in
 - Vue.js
 - PHP
 - HTML, CSS
-- Node.js
 
 ### Databases
 
@@ -42,12 +41,13 @@ I'm constantly seeking for new technologies and solutions - do self-education in
 
 ### Tools
 
-- Git
-- Linux CLI, BASH
+- Git CLI
 - CI/CD, Docker
+- Linux, BASH
 - Elasticsearch, Redis
 - Apache / Nginx
 - XML / XSD, SVG
+- Tailwind, SCSS
 
 ### Extensions
 
@@ -60,29 +60,26 @@ I'm constantly seeking for new technologies and solutions - do self-education in
 ### Magento
 
 - Developing, installing and updating modules and themes
-- Working with Catalog, Account and Checkout pages
+- Integrating payment and shipping methods
+- Implementing endpoints with REST API and GraphQL
 - Adding third-party integrations (GTM, Review.io, Bazaarvoice, etc.)
-- Migration from M1 to M2, to VueStorefront and minor version upgrades
-- Implementing new endpoints with REST API and GraphQL
-- Performing SEO profiling and applying accessibility improvements
-- Deploying projects with GitHub Actions and Bitbucket Pipelines
+- Migration from M1 to M2, to VueStorefront and version upgrades
+- Performing SEO, accessibility and performance profiling
+
+### Vue.js, Nuxt
+
+- Developing SSR and SEO-friendly applications
+- Implementing CRUD pages and endpoints for custom admin panel
+- Using Composables, Vuex and Pinia for state management
+- Integrating headless CMS pages and components
+- Vue 2 to 3 migration
 
 ### Symfony
 
-- Building and customizing REST API clients and endpoints
-- Developing admin panels using EasyAdmin
+- Building and customizing REST API services
 - Creating dashboard pages with Chart.js
-- Integrating Vue.js as a frontend
-- Migration minor and major versions
 - Writing CLI commands and queued tasks
-
-### Vue.js
-
-- Implementing mobile-first and SEO-friendly layouts
-- Utilizing Vuex or Pinia state managers
-- Adding and customizing PrimeVue and Vuetify components
-- Integrating Storyblok pages and components
-- Configuring PWA and setting up OpenGraph requests
+- Performing minor and major upgrades
 
 ## Speaker
 
