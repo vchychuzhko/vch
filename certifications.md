@@ -7,7 +7,9 @@ aside: false
 prev:
   text: Portfolio
   link: /portfolio
-next: false
+next:
+  text: Speaker
+  link: /speaker
 editLink: false
 lastUpdated: false
 ---

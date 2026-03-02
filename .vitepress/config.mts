@@ -39,13 +39,14 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/' },
-      { text: 'About', link: '/about' },
       { text: 'Portfolio', link: '/portfolio' },
       { text: 'Certifications', link: '/certifications' },
+      { text: 'Speaker', link: '/speaker' },
     ],
 
     socialLinks: [
       { icon: 'linkedin', link: 'https://linkedin.com/in/vchychuzhko' },
+      { icon: 'gmail', link: 'mailto:dev@vchychuzhko.com' },
       { icon: 'github', link: 'https://github.com/vchychuzhko' },
     ],
 

@@ -8,17 +8,17 @@ hero:
   tagline: Personal Website & Portfolio
   actions:
     - theme: brand
-      text: About Me
-      link: /about
+      text: Portfolio
+      link: /portfolio
     - theme: alt
-      text: Resume
-      link: https://vchychuzhko.com/cv.pdf
+      text: Blog
+      link: /blog
 
 features:
-  - title: Full Stack Development
-    details: Magento 2, Vue.js, Symfony
-  - title: Music
-    details: Guitar, Vocals, Piano
-  - title: Sport
-    details: Volleyball, Football, Snowboarding
+  - title: Web
+    details: Full cycle of development with JavaScript frameworks and PHP platforms
+  - title: Audit
+    details: Experience with Performance, Accessibility and SEO optimizations
+  - title: Devops
+    details: Familiar with hosting configuration, CI/CD and Docker
 ---
