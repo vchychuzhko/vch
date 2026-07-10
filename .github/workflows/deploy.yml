@@ -9,13 +9,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup key
-        run: |
-          set -eu
-          mkdir "$HOME/.ssh"
-          echo "${{ secrets.key }}" > "$HOME/.ssh/key"
-          chmod 600 "$HOME/.ssh/key"
-
       - name: Checkout
         uses: actions/checkout@v7
 
@@ -30,10 +23,20 @@ jobs:
       - name: Build
         run: npm run docs:build
 
+      - name: Setup SSH agent
+        uses: webfactory/ssh-agent@v0.10.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+
+      - name: Add server to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
       - name: Upload artifact
         run: |
-          rsync -e "ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete ./.vitepress/dist ${{ secrets.user }}@${{ secrets.host }}:${{ secrets.path }}/web
+          rsync -e "ssh -p ${{ secrets.SSH_PORT }}" --archive --compress --delete ./.vitepress/dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/web/
 
       - name: Run scripts
         run: |
-          ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no ${{ secrets.user }}@${{ secrets.host }} '${{ secrets.path }}/.deploy/scripts.sh'
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} '${{ secrets.DEPLOY_PATH }}/.deploy/scripts.sh'
