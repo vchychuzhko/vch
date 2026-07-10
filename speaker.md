@@ -12,7 +12,7 @@ lastUpdated: false
 
 # Speaker
 
-I've attended many conferences and meetups, and even participated in some of them as a speaker.
+I've attended many conferences and meetups and even participated in some of them as a speaker.
 
 ## Magento Association Connect (2021)
 

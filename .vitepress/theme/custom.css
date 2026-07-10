@@ -5,10 +5,10 @@
 .portfolio-page h1 {
   text-align: center;
 }
-.portfolio-page .VPSocialLinks {
+.portfolio-page .VPContent .VPSocialLinks {
   gap: 1rem;
 }
-.portfolio-page .VPSocialLinks a {
+.portfolio-page .VPContent .VPSocialLinks a {
   width: initial;
 }
 

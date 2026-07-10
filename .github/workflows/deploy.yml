@@ -1,14 +1,15 @@
 name: Deploy
 
 on:
-  [workflow_dispatch]
+  push:
+    branches:
+      - master
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Setup Key
+      - name: Setup key
         run: |
           set -eu
           mkdir "$HOME/.ssh"
@@ -18,21 +19,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Node Setup
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: 24
 
-      - name: Node Install
+      - name: Install dependencies
         run: npm install
 
       - name: Build
         run: npm run docs:build
 
-      - name: Upload
+      - name: Upload artifact
         run: |
           rsync -e "ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete ./.vitepress/dist ${{ secrets.user }}@${{ secrets.host }}:${{ secrets.path }}/web
 
-      - name: Scripts
+      - name: Run scripts
         run: |
           ssh -p ${{ secrets.port }} -i $HOME/.ssh/key -o StrictHostKeyChecking=no ${{ secrets.user }}@${{ secrets.host }} '${{ secrets.path }}/.deploy/scripts.sh'

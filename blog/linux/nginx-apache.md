@@ -5,11 +5,7 @@ description: Guide to set up Nginx and Apache to run simultaneously
 
 # Nginx + Apache
 
-This is a guide to set up Nginx and Apache web servers to run at the same time for developer environment.
-
-::: warning :bulb: WARNING
-This way your system will only listen to requests from your own machine. There will be no response to neither LAN nor internet requests.
-:::
+This is a guide to set up Nginx and Apache web servers to run at the same time for the developer environment.
 
 ## Prerequisites
 
@@ -103,7 +99,7 @@ sudo service apache2 restart
 
 ## How to use
 
-For new or existing configuration files just prepend needed hostname before port:
+For new or existing configuration files prepend the necessary hostname before port:
 
 ```nginx{2,7}
 server {
@@ -138,9 +134,9 @@ When adding domain in `/etc/hosts` file specify [mapped local IP address](#hosts
 
 ## What it solves
 
-Using this approach you have both services working at the same time with no additional ports required.
+This approach allows you to have both services working at the same time with no additional ports required.
 
-This way you can use needed web server for different projects to replicate production environments more precisely.
+So you can use the necessary web server for different projects to replicate production environments more precisely.
 
 Suitable when Docker is not an option.
 
@@ -148,4 +144,4 @@ Suitable when Docker is not an option.
 
 This works by creating some sort of local proxy domains - aliases - for Nginx and Apache services.
 
-Your project domain pointed to mapped local IP address will be handled by web server mapped to this IP address, as it listens to it by alias.
+Your project domain pointed to a mapped local IP address will be handled by a web server mapped to this IP address, as it listens to it by alias.

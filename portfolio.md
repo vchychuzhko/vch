@@ -32,6 +32,7 @@ const portfolio = [
     links: [
       { icon: { svg: 'Demo' }, link: 'https://pa-demo.vchychuzhko.com' },
       { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/personal-accountant' },
+      { icon: { svg: 'Docker' }, link: 'https://hub.docker.com/r/vchychuzhko/personal-accountant' },
     ]
   },
   {

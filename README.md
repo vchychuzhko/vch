@@ -2,16 +2,6 @@
 
 Personal Website & Portfolio.
 
-## Deployment
-
-Set **BASE_URL** variable in `.env` file or pass it during build:
-
-```sh
-BASE_URL=http://localhost:5173 npm run docs:build
-```
-
-This is required for proper OpenGraph urls.
-
 ## Customize configuration
 
 See [VitePress Configuration Reference](https://vitepress.dev/reference/site-config).

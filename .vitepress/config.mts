@@ -23,7 +23,7 @@ export default defineConfig({
 
     frontmatter.head ??= []
     frontmatter.head.push(
-      ['meta', { property: 'og:title', content: title + ' | VCH' }],
+      ['meta', { property: 'og:title', content: title + ' | Vladyslav Chychuzhko' }],
       ['meta', { property: 'og:description', content: description }],
     )
   },
