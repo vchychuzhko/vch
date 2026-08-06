@@ -2,13 +2,18 @@
   max-width: initial;
 }
 
-.portfolio-page h1 {
+.portfolio-page h1,
+.portfolio-page h2 {
   text-align: center;
 }
-.portfolio-page .VPContent .VPSocialLinks {
+
+.VPContent .VPTeamMembers .avatar-img {
+  width: 100%;
+}
+.VPContent .VPSocialLinks {
   gap: 1rem;
 }
-.portfolio-page .VPContent .VPSocialLinks a {
+.VPContent .VPSocialLinks a {
   width: initial;
 }
 

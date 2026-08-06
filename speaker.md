@@ -5,7 +5,9 @@ sidebar: false
 prev:
   text: Certifications
   link: /certifications
-next: false
+next:
+  text: Knowledge Base
+  link: /knowledge/
 editLink: false
 lastUpdated: false
 ---

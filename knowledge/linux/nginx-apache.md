@@ -142,6 +142,6 @@ Suitable when Docker is not an option.
 
 ## Understanding
 
-This works by creating some sort of local proxy domains - aliases - for Nginx and Apache services.
+This works by creating some sort of local proxy domain aliases - for Nginx and Apache services.
 
 Your project domain pointed to a mapped local IP address will be handled by a web server mapped to this IP address, as it listens to it by alias.

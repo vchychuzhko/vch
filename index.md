@@ -11,14 +11,14 @@ hero:
       text: Portfolio
       link: /portfolio
     - theme: alt
-      text: Blog
-      link: /blog
+      text: Knowledge Base
+      link: /knowledge/
 
 features:
   - title: Web
-    details: Full cycle of development with JavaScript frameworks and PHP platforms
+    details: Full cycle of development with JavaScript and PHP platforms
   - title: Audit
     details: Experience with Performance, Accessibility and SEO optimizations
-  - title: Devops
+  - title: DevOps
     details: Familiar with hosting configuration, CI/CD and Docker
 ---

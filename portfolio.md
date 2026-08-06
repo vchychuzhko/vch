@@ -13,7 +13,7 @@ lastUpdated: false
 ---
 
 <script setup>
-import { VPTeamMembers } from 'vitepress/theme'
+import { VPTeamMembers } from 'vitepress/theme';
 
 const portfolio = [
   {
@@ -21,7 +21,7 @@ const portfolio = [
     name: 'PlaySome',
     desc: 'Symfony, AudioContext API',
     links: [
-      { icon: { svg: 'Live' }, link: 'https://playsome.fun' },
+      { icon: { svg: 'Live' }, link: 'https://ps.vchychuzhko.com' },
       { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/playsome' },
     ]
   },
@@ -53,7 +53,7 @@ const portfolio = [
       { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/todo' },
     ]
   },
-]
+];
 </script>
 
 <h1>Portfolio</h1>

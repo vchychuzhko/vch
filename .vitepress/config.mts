@@ -37,24 +37,23 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Blog', link: '/blog/' },
       { text: 'Portfolio', link: '/portfolio' },
       { text: 'Certifications', link: '/certifications' },
       { text: 'Speaker', link: '/speaker' },
+      { text: 'Knowledge Base', link: '/knowledge/', activeMatch: '/knowledge/' },
     ],
 
     socialLinks: [
-      { icon: 'linkedin', link: 'https://linkedin.com/in/vchychuzhko' },
+      // { icon: 'linkedin', link: 'https://linkedin.com/in/vchychuzhko' },
       { icon: 'gmail', link: 'mailto:dev@vchychuzhko.com' },
       { icon: 'github', link: 'https://github.com/vchychuzhko' },
     ],
 
     sidebar: [
-      { text: 'Introduction', link: '/blog/' },
+      { text: 'Introduction', link: '/knowledge/' },
       {
         text: 'Web',
-        base: '/blog/web',
+        base: '/knowledge/web',
         items: [
           { text: 'Property document.forms', link: '/forms' },
           { text: 'Attribute novalidate', link: '/novalidate' },
@@ -62,7 +61,7 @@ export default defineConfig({
       },
       {
         text: 'Linux',
-        base: '/blog/linux',
+        base: '/knowledge/linux',
         items: [
           { text: 'Nginx + Apache', link: '/nginx-apache' },
         ],
