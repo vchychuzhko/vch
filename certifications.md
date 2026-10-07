@@ -15,13 +15,13 @@ lastUpdated: false
 ---
 
 <script setup>
-import { VPTeamMembers } from 'vitepress/theme'
+import { VPTeamMembers } from 'vitepress/theme';
 
 const adobe = [
   {
     avatar: '/images/adobe-commerce.png',
     name: 'Adobe Certified Expert (Front End)',
-    title: '2022 - 2026',
+    title: 'From 2022',
     links: [
       { icon: { svg: 'Show' }, link: 'https://certification.adobe.com/credential/verify/74b479ae-79ef-4e2f-82d4-cf53fec597e5' },
     ]
@@ -34,7 +34,7 @@ const adobe = [
       { icon: { svg: 'Show' }, link: 'https://certification.adobe.com/credential/verify/d1f11473-b0b7-11ef-8f8b-42010a40001c' },
     ]
   },
-]
+];
 
 const english = [
   {
@@ -45,7 +45,7 @@ const english = [
       { icon: { svg: 'Show' }, link: 'https://vchychuzhko.com/aptis.pdf' },
     ]
   },
-]
+];
 </script>
 
 # Certifications

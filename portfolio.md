@@ -26,11 +26,11 @@ const portfolio = [
     ]
   },
   {
-    avatar: 'https://pa-demo.vchychuzhko.com/og.svg',
+    avatar: 'https://demo.pa.vchychuzhko.com/og.svg',
     name: 'Personal Accountant',
     desc: 'Symfony, EasyAdmin, Chart.js',
     links: [
-      { icon: { svg: 'Demo' }, link: 'https://pa-demo.vchychuzhko.com' },
+      { icon: { svg: 'Demo' }, link: 'https://demo.pa.vchychuzhko.com' },
       { icon: { svg: 'Github' }, link: 'https://github.com/vchychuzhko/personal-accountant' },
       { icon: { svg: 'Docker' }, link: 'https://hub.docker.com/r/vchychuzhko/personal-accountant' },
     ]

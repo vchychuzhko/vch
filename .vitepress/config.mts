@@ -60,10 +60,11 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Linux',
-        base: '/knowledge/linux',
+        text: 'Development',
+        base: '/knowledge/development',
         items: [
           { text: 'Nginx + Apache', link: '/nginx-apache' },
+          { text: 'Github Actions', link: '/github-actions' },
         ],
       },
     ],

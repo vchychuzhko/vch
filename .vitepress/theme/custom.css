@@ -16,6 +16,9 @@
 .VPContent .VPSocialLinks a {
   width: initial;
 }
+.VPContent .VPSocialLinks a span {
+  width: initial;
+}
 
 .certifications-page h1 {
   text-align: center;
